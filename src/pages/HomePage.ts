@@ -11,11 +11,11 @@ export function HomePage(): string {
   return `
     ${Hero()}
     ${TrustStrip()}
-    ${FeaturesGrid()}
-    ${ProductScreens()}
-    ${DemoSection()}
-    ${HowItWorks()}
     ${PricingSection()}
+    ${FeaturesGrid()}
+    ${DemoSection()}
+    ${ProductScreens()}
+    ${HowItWorks()}
     ${Testimonials()}
   `;
 }

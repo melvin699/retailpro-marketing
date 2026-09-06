@@ -1,4 +1,4 @@
-import { SITE } from '../config/site';
+import { SITE, getWhatsappUrl } from '../config/site';
 import { icon } from '../lib/icons';
 import { cx, ui } from '../lib/ui';
 import type { NavItem } from '../types';
@@ -7,8 +7,8 @@ import { Button } from './Button';
 const navItems: NavItem[] = [
   { label: 'Features', href: '/features' },
   { label: 'Pricing', href: '/pricing' },
-  { label: 'Demo', href: '/demo' },
-  { label: 'Resources', href: '/faqs' },
+  { label: 'Sample shop', href: SITE.appUrl, external: true },
+  { label: 'FAQs', href: '/faqs' },
   { label: 'Contact', href: '/contact' },
 ];
 
@@ -21,8 +21,8 @@ const statusItems = [
 
 export function Header(navOpen = false): string {
   return `
-    <header class="sticky top-0 z-50 border-b border-line bg-navy">
-      <div class="border-b border-line bg-navy-4">
+    <header class="sticky top-0 z-50 border-b border-line bg-white">
+      <div class="border-b border-line bg-page">
         <div class="${cx(ui.container, 'flex min-h-8 items-center gap-5 overflow-x-auto font-mono text-[0.68rem] font-medium tracking-[0.08em] text-muted uppercase whitespace-nowrap')}">
           ${statusItems
             .map((item) => `<span class="${item.live ? ui.live : ''}">${item.label}</span>`)
@@ -51,10 +51,10 @@ export function Header(navOpen = false): string {
           navOpen ? 'flex' : 'hidden',
         )}">
           ${navItems
-            .map(
-              (item) =>
-                `<a class="inline-flex h-10 items-center px-2.5 font-medium text-muted hover:text-ink" href="${item.href}" data-link>${item.label}</a>`,
-            )
+            .map((item) => {
+              const attrs = item.external ? ' target="_blank" rel="noreferrer"' : ' data-link';
+              return `<a class="inline-flex h-10 items-center px-2.5 font-medium text-muted hover:text-ink" href="${item.href}"${attrs}>${item.label}</a>`;
+            })
             .join('')}
         </nav>
 
@@ -62,7 +62,7 @@ export function Header(navOpen = false): string {
           'w-full items-center gap-3.5 pb-4 nav:flex nav:w-auto nav:justify-self-end nav:pb-0',
           navOpen ? 'flex' : 'hidden',
         )}">
-          <a class="inline-flex h-10 items-center px-0.5 font-medium text-muted hover:text-ink" href="${SITE.appUrl}" target="_blank" rel="noreferrer">Open till</a>
+          <a class="inline-flex h-10 items-center gap-1.5 px-0.5 font-medium text-muted hover:text-ink" href="${getWhatsappUrl()}" target="_blank" rel="noreferrer">${icon('whatsapp')}<span>WhatsApp</span></a>
           ${Button({ label: SITE.headerCta, href: SITE.appUrl, variant: 'dark' })}
         </div>
       </div>

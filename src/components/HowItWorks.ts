@@ -4,8 +4,8 @@ import { SectionIntro } from './SectionIntro';
 const steps = [
   {
     number: '01',
-    title: 'Put the shop on the system',
-    text: 'Products, prices, opening stock. An afternoon not a three-week project.',
+    title: 'Add your products',
+    text: 'Names, prices, opening stock. An afternoon, not a three-week project.',
   },
   {
     number: '02',
@@ -14,8 +14,8 @@ const steps = [
   },
   {
     number: '03',
-    title: 'Close with a number you trust',
-    text: 'Till versus drawer. What sold. What is low. Tomorrow’s order list writes itself.',
+    title: 'Close the till at night',
+    text: 'Match the drawer. See what sold. Know what to buy in the morning.',
   },
 ];
 
@@ -24,9 +24,9 @@ export function HowItWorks(): string {
     <section class="${ui.section} bg-navy-4" id="how-it-works">
       <div class="${ui.container}">
         ${SectionIntro({
-          eyebrow: 'From open to close',
-          title: 'Short enough to learn on a Saturday',
-          description: 'Built for the person at the counter, not a back-office team.',
+          eyebrow: 'Getting started',
+          title: 'Set up in a day',
+          description: 'You do not need a back-office team. One person at the counter is enough.',
         })}
         <div class="grid grid-cols-3 gap-6 max-nav:grid-cols-1">
           ${steps

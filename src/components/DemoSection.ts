@@ -1,3 +1,4 @@
+import { SITE } from '../config/site';
 import { cx, ui } from '../lib/ui';
 import { SectionIntro } from './SectionIntro';
 import { VideoPlaceholder } from './VideoPlaceholder';
@@ -8,17 +9,16 @@ export function DemoSection(): string {
       <div class="${cx(ui.container, 'grid items-center gap-12 nav:grid-cols-2')}">
         <div>
           ${SectionIntro({
-            eyebrow: 'Watch the counter',
-            title: 'A Saturday close, not a product tour',
-            description: 'See a sale, an M-Pesa ping, a stock drop, and the number you lock at 9pm.',
+            eyebrow: 'Watch the till',
+            title: 'See RetailPro in action',
+            description: 'A short recording of the real till. Then open a sample shop and click around yourself.',
           })}
           <div class="mt-5 grid">
             ${[
-              'Find the product scan or type',
+              'Find an item — scan or type the name',
               'Take cash or M-Pesa on the same sale',
-              'Stock falls as the receipt prints',
+              'Stock drops as the receipt prints',
               'Close the till against the drawer',
-              'See what to restock in the morning',
             ]
               .map(
                 (item) =>
@@ -26,6 +26,7 @@ export function DemoSection(): string {
               )
               .join('')}
           </div>
+          <p class="mt-5 text-muted">${SITE.demoLabel}</p>
         </div>
         <div>
           ${VideoPlaceholder()}

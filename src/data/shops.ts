@@ -4,7 +4,7 @@ export const SHOPS: Shop[] = [
   {
     kind: 'Duka & grocery',
     title: 'The evening mix',
-    text: 'Bread, milk, unga, soda, airtime. Fast moving, easy to lose count. RetailPro keeps the shelf and the till telling the same story.',
+    text: 'Bread, milk, unga, soda, airtime. Fast moving, easy to lose count. Keep the shelf and the till telling the same story.',
   },
   {
     kind: 'Chemist',

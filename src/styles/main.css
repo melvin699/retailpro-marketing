@@ -2,20 +2,21 @@
 
 @theme {
   --color-navy: #0b1321;
-  --color-navy-2: #121b2c;
-  --color-navy-3: #182233;
-  --color-navy-4: #080e18;
-  --color-ink: #f4f6f8;
-  --color-muted: #94a3b8;
-  --color-line: #243044;
-  --color-line-2: #334155;
+  --color-page: #f4f6f8;
+  --color-navy-2: #ffffff;
+  --color-navy-3: #eef2f6;
+  --color-navy-4: #eef2f6;
+  --color-ink: #0b1321;
+  --color-muted: #475569;
+  --color-line: #e2e8f0;
+  --color-line-2: #cbd5e1;
   --color-brand: #f39c12;
   --color-brand-soft: rgb(243 156 18 / 14%);
-  --color-ok: #34d399;
+  --color-ok: #059669;
   --font-sans: 'IBM Plex Sans', 'Segoe UI', sans-serif;
   --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
-  --shadow-card: 0 16px 40px rgb(0 0 0 / 28%);
-  --shadow-glow: 0 0 0 1px rgb(243 156 18 / 45%), 0 0 36px rgb(243 156 18 / 16%);
+  --shadow-card: 0 14px 36px rgb(11 19 33 / 10%);
+  --shadow-glow: 0 0 0 1px rgb(243 156 18 / 45%), 0 12px 28px rgb(243 156 18 / 16%);
   --breakpoint-nav: 60.01rem;
 }
 
@@ -25,7 +26,7 @@
   }
 
   body {
-    @apply m-0 bg-navy font-sans text-ink antialiased;
+    @apply m-0 bg-page font-sans text-ink antialiased;
     text-rendering: optimizeLegibility;
   }
 

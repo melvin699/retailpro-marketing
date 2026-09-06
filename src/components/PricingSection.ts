@@ -9,15 +9,15 @@ export function PricingSection(): string {
     <section class="${ui.section} scroll-mt-[116px]" id="pricing">
       <div class="${ui.container}">
         ${SectionIntro({
-          eyebrow: 'What it costs',
-          title: 'Priced like a shop tool, not software theatre',
-          description: 'Start monthly. Buy it outright if you already know you will keep it.',
+          eyebrow: 'Pricing',
+          title: 'What you pay',
+          description: 'KSh 500 a month to start. Or pay KSh 30,000 once and keep it.',
         })}
         <div class="grid grid-cols-3 items-stretch gap-6 max-nav:grid-cols-1">
           ${PRICING.map(PricingCard).join('')}
         </div>
         <div class="mt-11 border-t border-line pt-8">
-          <p class="${ui.pill} mb-[1.15rem]">Before you move the till</p>
+          <p class="${ui.pill} mb-[1.15rem]">Common questions</p>
           <div class="grid gap-3">
             ${PRICING_FAQ.map(
               (item) => `

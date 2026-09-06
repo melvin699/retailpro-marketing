@@ -24,8 +24,8 @@ export function FaqPage(): string {
     <section class="${cx(ui.section, ui.page)}">
       <div class="${cx(ui.container, 'max-w-[57.5rem]')}">
         <div class="mb-10 max-w-[45rem]">
-          <p class="${ui.pill}">Questions shops actually ask</p>
-          <h2 class="${ui.h2}">Before you move the till over</h2>
+          <p class="${ui.pill}">Questions</p>
+          <h2 class="${ui.h2}">Things shop owners ask</h2>
           <p class="${ui.lead}">Short answers. If yours is not here, WhatsApp us.</p>
         </div>
         <div class="grid gap-3">

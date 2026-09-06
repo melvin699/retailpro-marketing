@@ -7,9 +7,9 @@ export function ProductScreens(): string {
     <section class="${ui.section} bg-navy-4" id="product-screens">
       <div class="${ui.container}">
         ${SectionIntro({
-          eyebrow: 'The actual till',
-          title: 'Home, sell, stock the screens you will use',
-          description: 'Not a concept. This is RetailPro on a shop counter.',
+          eyebrow: 'The real till',
+          title: 'These are the actual screens',
+          description: 'Home, sell, stock, and product. The same ones you will use on the counter.',
         })}
         <div class="grid grid-cols-2 gap-5 max-nav:grid-cols-1">
           ${SCREENS.map(
@@ -17,7 +17,7 @@ export function ProductScreens(): string {
               <figure class="m-0 overflow-hidden rounded-[14px] border border-line bg-navy-2 shadow-(--shadow-card)">
                 <div class="flex items-center justify-between gap-3 border-b border-line bg-navy-4 px-3.5 py-1.5 font-mono text-[0.68rem] font-medium tracking-[0.08em] text-muted uppercase">
                   <span>${screen.label}</span>
-                  <span>Live till</span>
+                  <span>RetailPro</span>
                 </div>
                 <button
                   class="block w-full cursor-zoom-in border-0 bg-transparent p-0 text-left"

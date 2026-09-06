@@ -8,9 +8,8 @@ export function Testimonials(): string {
       <div class="${ui.container}">
         ${SectionIntro({
           eyebrow: 'Who it is for',
-          title: 'Different shops. Same problem.',
-          description:
-            'You already know what sold. The work is keeping the shelf, the till, and the close in agreement.',
+          title: 'Built for shops like yours',
+          description: 'Dukas, chemists, hardware. Same job: keep the shelf, the till, and the close in agreement.',
         })}
         <div class="grid grid-cols-3 gap-6 max-nav:grid-cols-1">
           ${SHOPS.map(

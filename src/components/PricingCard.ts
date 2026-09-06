@@ -13,8 +13,8 @@ export function PricingCard(plan: PricingPlan): string {
 
   return `
     <article class="${cx(
-      'flex h-full flex-col rounded-xl border p-[1.65rem_1.5rem]',
-      plan.tone === 'featured' ? 'border-brand bg-navy-2 shadow-(--shadow-glow)' : 'border-line bg-navy-2',
+      'flex h-full flex-col rounded-xl border bg-navy-2 p-[1.65rem_1.5rem] transition duration-200 ease-out hover:-translate-y-1.5 hover:border-brand hover:shadow-(--shadow-glow)',
+      plan.tone === 'featured' ? 'border-brand shadow-(--shadow-glow)' : 'border-line',
     )}">
       <div class="mb-[1.1rem] flex justify-between gap-3 font-mono text-[0.68rem] font-medium tracking-[0.08em] text-muted uppercase">
         <span>${plan.code}</span>

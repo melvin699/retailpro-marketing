@@ -9,9 +9,8 @@ export function FeaturesGrid(): string {
       <div class="${ui.container}">
         ${SectionIntro({
           eyebrow: 'On the counter',
-          title: 'What the day actually needs',
-          description:
-            'Not a pile of modules. The few things a busy shop cannot afford to get wrong: the till, the shelf, and the close.',
+          title: 'Everything your shop needs at the counter.',
+          description: 'Till, stock, M-Pesa, and the day’s close. Nothing extra to learn.',
         })}
         <div class="grid grid-cols-3 gap-4 max-[1180px]:grid-cols-2 max-sm:grid-cols-1">
           ${FEATURES.map(FeatureCard).join('')}

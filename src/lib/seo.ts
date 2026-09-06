@@ -3,9 +3,9 @@ import type { PageMeta } from '../types';
 
 const PAGE_META: Record<string, PageMeta> = {
   '/': {
-    title: 'RetailPro - POS & Stock Management for Kenyan Retail Shops',
+    title: 'RetailPro - Run your shop. Know your numbers.',
     description:
-      'RetailPro is the till, stock and end-of-day system for Kenyan dukas, chemists and mini-marts. Cash and M-Pesa on one counter.',
+      'Till, stock and M-Pesa for Kenyan dukas, chemists and mini-marts. Try a sample shop — no sign-up.',
   },
   '/features': {
     title: 'RetailPro Features - Till, Stock and M-Pesa',
@@ -17,8 +17,8 @@ const PAGE_META: Record<string, PageMeta> = {
     description: 'Starter, Business and Lifetime plans for RetailPro. Fourteen-day trial, no card.',
   },
   '/demo': {
-    title: 'RetailPro Demo - Explore the Product',
-    description: 'Try the RetailPro demo and see how checkout, stock tracking and reports work for Kenyan shops.',
+    title: 'Try a RetailPro sample shop',
+    description: 'A sample duka you can click through. No sign-up. See sell, stock and the day’s close.',
   },
   '/faqs': {
     title: 'RetailPro FAQs',

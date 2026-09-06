@@ -2,22 +2,22 @@ import { SITE } from '../config/site';
 import { cx, ui } from '../lib/ui';
 import { Button } from './Button';
 
-const trustItems = ['Works offline', 'M-Pesa on the till', 'Set up in a day'];
+const trustItems = ['Works offline', 'M-Pesa on the till', 'From KSh 500 / month'];
 
 export function Hero(): string {
   return `
-    <section class="bg-[radial-gradient(ellipse_at_80%_10%,rgb(243_156_18_/_12%),transparent_42%),var(--color-navy)] py-16 text-ink">
+    <section class="bg-[radial-gradient(ellipse_at_80%_10%,rgb(243_156_18_/_12%),transparent_42%),var(--color-page)] py-16 text-ink">
       <div class="${cx(ui.container, 'grid items-center gap-10 nav:grid-cols-[minmax(0,0.9fr)_minmax(0,1.2fr)] nav:gap-10')}">
         <div class="flex min-w-0 flex-col items-start pt-1">
-          <p class="${ui.pill}">Counter system</p>
-          <h1 class="mt-4 max-w-[18ch] text-[clamp(2.2rem,4.4vw,3.6rem)] leading-[1.12] max-nav:max-w-none max-nav:text-[clamp(2.4rem,9vw,3.4rem)]">The till, the stock, and the day’s money in one place.</h1>
+          <p class="${ui.pill}">For Kenyan shops</p>
+          <h1 class="mt-4 max-w-[14ch] text-[clamp(2.2rem,4.4vw,3.6rem)] leading-[1.12] max-nav:max-w-none max-nav:text-[clamp(2.4rem,9vw,3.4rem)]">Run your shop. Know your numbers.</h1>
           <p class="${ui.lead}">
-            RetailPro is the counter system for Kenyan dukas, chemists and mini-marts.
-            Sell, restock and close without a second notebook.
+            Sell, track stock, and close the day on one till. Cash and M-Pesa together.
+            For dukas, chemists and mini-marts.
           </p>
           <div class="${ui.actions}">
             ${Button({ label: SITE.primaryCta, href: SITE.appUrl, variant: 'dark' })}
-            ${Button({ label: SITE.secondaryCta, href: '/demo', variant: 'ghost', attrs: 'data-link' })}
+            ${Button({ label: SITE.secondaryCta, href: '/pricing', variant: 'ghost', attrs: 'data-link' })}
           </div>
           <div class="mt-5 text-[0.92rem] text-muted">${SITE.trialNote}</div>
           <ul class="mt-7 flex flex-wrap items-center gap-x-5 gap-y-3 max-sm:grid max-sm:w-full max-sm:grid-cols-2" aria-label="RetailPro practical notes">
