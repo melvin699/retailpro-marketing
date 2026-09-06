@@ -1,0 +1,53 @@
+import type { PricingPlan } from '../types';
+
+export const PRICING: PricingPlan[] = [
+  {
+    name: 'Starter',
+    code: 'Plan 01',
+    scope: 'One counter',
+    price: 'KSh 500',
+    period: '/ month',
+    badge: '',
+    subtitle: 'One counter. One person. The basics.',
+    cta: 'Start 14-day trial',
+    tone: 'default',
+    features: ['Till and receipts', 'Stock in and out', 'Daily sales report', '1 user', 'Email support'],
+  },
+  {
+    name: 'Business',
+    code: 'Plan 02',
+    scope: 'Team till',
+    price: 'KSh 1,000',
+    period: '/ month',
+    badge: 'Most shops pick this',
+    subtitle: 'Cash, M-Pesa, and a team on the same till.',
+    cta: 'Start 14-day trial',
+    tone: 'featured',
+    features: [
+      'Everything in Starter',
+      'M-Pesa next to cash',
+      'Till close and cash up',
+      'Multiple users',
+      'Richer reports',
+      'WhatsApp support',
+    ],
+  },
+  {
+    name: 'Lifetime',
+    code: 'Plan 03',
+    scope: 'Pay once',
+    price: 'KSh 30,000',
+    period: 'once',
+    badge: 'Pay once',
+    subtitle: 'Own it. No monthly invoice after that.',
+    cta: 'Ask about lifetime',
+    tone: 'success',
+    features: [
+      'Everything in Business',
+      'Use it for as long as you run the shop',
+      'Updates included',
+      'Core features as they ship',
+      'WhatsApp support',
+    ],
+  },
+];

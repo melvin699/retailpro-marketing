@@ -1,0 +1,103 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-navy: #0b1321;
+  --color-navy-2: #121b2c;
+  --color-navy-3: #182233;
+  --color-navy-4: #080e18;
+  --color-ink: #f4f6f8;
+  --color-muted: #94a3b8;
+  --color-line: #243044;
+  --color-line-2: #334155;
+  --color-brand: #f39c12;
+  --color-brand-soft: rgb(243 156 18 / 14%);
+  --color-ok: #34d399;
+  --font-sans: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --shadow-card: 0 16px 40px rgb(0 0 0 / 28%);
+  --shadow-glow: 0 0 0 1px rgb(243 156 18 / 45%), 0 0 36px rgb(243 156 18 / 16%);
+  --breakpoint-nav: 60.01rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 bg-navy font-sans text-ink antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  img {
+    @apply block max-w-full;
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  svg {
+    width: 1em;
+    height: 1em;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  main {
+    overflow: clip;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  ul {
+    @apply m-0;
+  }
+
+  h1,
+  h2 {
+    @apply font-sans font-bold tracking-[-0.035em];
+  }
+
+  ul {
+    @apply list-none p-0;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(243 156 18 / 45%);
+    outline-offset: 3px;
+  }
+}
+
+.faq-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-card summary::after {
+  content: '+';
+  flex: 0 0 auto;
+  color: var(--color-brand);
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.faq-card[open] summary::after {
+  content: '–';
+}

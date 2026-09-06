@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#F8FAFC"/>
+  <rect x="70" y="60" width="1060" height="510" rx="36" fill="white" stroke="#E4E7EC"/>
+  <rect x="120" y="132" width="210" height="366" rx="24" fill="#121A2B"/>
+  <rect x="362" y="132" width="718" height="86" rx="20" fill="#F7F9FC" stroke="#E4E7EC"/>
+  <rect x="362" y="248" width="450" height="212" rx="24" fill="#FFFFFF" stroke="#E4E7EC"/>
+  <rect x="838" y="248" width="242" height="212" rx="24" fill="#FFFFFF" stroke="#E4E7EC"/>
+  <text x="120" y="96" fill="#101828" font-family="Arial, sans-serif" font-size="64" font-weight="700">RetailPro</text>
+  <text x="120" y="540" fill="#475467" font-family="Arial, sans-serif" font-size="28">POS &amp; Stock Management for Kenyan Retail Shops</text>
+  <text x="150" y="180" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="700">RetailPro</text>
+  <text x="150" y="230" fill="#C7D2FE" font-family="Arial, sans-serif" font-size="20">Dashboard</text>
+  <text x="150" y="270" fill="#C7D2FE" font-family="Arial, sans-serif" font-size="20">POS</text>
+  <text x="150" y="310" fill="#C7D2FE" font-family="Arial, sans-serif" font-size="20">Products</text>
+  <text x="150" y="350" fill="#C7D2FE" font-family="Arial, sans-serif" font-size="20">Sales</text>
+  <text x="150" y="390" fill="#C7D2FE" font-family="Arial, sans-serif" font-size="20">Reports</text>
+  <text x="395" y="184" fill="#101828" font-family="Arial, sans-serif" font-size="24" font-weight="700">Run your shop. Grow your business.</text>
+  <text x="395" y="420" fill="#475467" font-family="Arial, sans-serif" font-size="22">Simple POS, stock control, cash and M-Pesa tracking.</text>
+  <rect x="395" y="278" width="40" height="132" rx="12" fill="#CBD5FF"/>
+  <rect x="455" y="330" width="40" height="80" rx="12" fill="#A5B4FF"/>
+  <rect x="515" y="292" width="40" height="118" rx="12" fill="#7C8BFF"/>
+  <rect x="575" y="252" width="40" height="158" rx="12" fill="#6372FF"/>
+  <rect x="635" y="312" width="40" height="98" rx="12" fill="#5167FF"/>
+  <rect x="695" y="226" width="40" height="184" rx="12" fill="#4457DD"/>
+  <circle cx="911" cy="298" r="10" fill="#6372FF"/>
+  <circle cx="911" cy="346" r="10" fill="#6372FF"/>
+  <circle cx="911" cy="394" r="10" fill="#6372FF"/>
+  <text x="936" y="305" fill="#101828" font-family="Arial, sans-serif" font-size="20">Top selling products</text>
+  <text x="936" y="349" fill="#475467" font-family="Arial, sans-serif" font-size="18">Bread</text>
+  <text x="936" y="397" fill="#475467" font-family="Arial, sans-serif" font-size="18">Milk 500ml</text>
+  <text x="936" y="445" fill="#475467" font-family="Arial, sans-serif" font-size="18">Sugar 2kg</text>
+</svg>
