@@ -7,7 +7,6 @@ import { Button } from './Button';
 const navItems: NavItem[] = [
   { label: 'Features', href: '/features' },
   { label: 'Pricing', href: '/pricing' },
-  { label: 'Sample shop', href: SITE.appUrl, external: true },
   { label: 'FAQs', href: '/faqs' },
   { label: 'Contact', href: '/contact' },
 ];
