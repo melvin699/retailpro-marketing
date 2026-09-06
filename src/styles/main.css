@@ -23,10 +23,11 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    font-size: 15px;
   }
 
   body {
-    @apply m-0 bg-page font-sans text-ink antialiased;
+    @apply m-0 bg-page font-sans text-[15px] leading-6 text-ink antialiased;
     text-rendering: optimizeLegibility;
   }
 

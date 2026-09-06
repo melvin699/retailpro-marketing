@@ -25,7 +25,7 @@ export function ProductScreens(): string {
                   data-lightbox="${screen.src}"
                   data-lightbox-alt="${screen.alt}"
                 >
-                  <img class="block h-[260px] w-full border-b border-line bg-white object-cover object-top hover:brightness-[0.97]" src="${screen.src}" alt="${screen.alt}" width="1024" height="600" />
+                  <img class="block h-[180px] w-full border-b border-line bg-white object-contain object-top hover:brightness-[0.97]" src="${screen.src}" alt="${screen.alt}" width="1024" height="600" />
                 </button>
                 <figcaption class="flex items-baseline justify-between gap-3 px-4 py-3.5">
                   <strong class="font-mono text-xs font-medium tracking-[0.08em] uppercase">${screen.label}</strong>

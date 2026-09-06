@@ -5,7 +5,7 @@ import { SectionIntro } from './SectionIntro';
 
 export function FeaturesGrid(): string {
   return `
-    <section class="${ui.section} scroll-mt-[116px]" id="features">
+    <section class="${ui.section} scroll-mt-24" id="features">
       <div class="${ui.container}">
         ${SectionIntro({
           eyebrow: 'On the counter',

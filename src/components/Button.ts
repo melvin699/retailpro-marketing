@@ -29,7 +29,7 @@ export function Button({
   const externalAttrs = href.startsWith('http') ? ' target="_blank" rel="noreferrer"' : '';
 
   return `<a class="${cx(
-    'inline-flex min-h-12 items-center justify-center gap-2.5 rounded-md border px-[1.15rem] font-semibold transition-colors max-sm:w-full',
+    'inline-flex min-h-10 items-center justify-center gap-2 rounded-md border px-4 text-sm font-semibold transition-colors max-sm:w-full',
     variants[variant],
   )}" href="${href}"${externalAttrs} ${attrs}>${iconHtml}<span>${label}</span></a>`;
 }

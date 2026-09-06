@@ -10,7 +10,7 @@ export function VideoPlaceholder({ compact = false }: { compact?: boolean } = {}
         <span class="${ui.live}">1 min walkthrough</span>
       </div>
       <video
-        class="block h-auto max-h-[420px] w-full bg-navy-4 object-cover object-top"
+        class="block h-auto max-h-[280px] w-full bg-white object-contain object-top"
         controls
         playsinline
         preload="metadata"

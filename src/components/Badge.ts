@@ -8,5 +8,5 @@ const tones: Record<PlanTone, string> = {
 
 export function Badge(text: string, tone: PlanTone = 'default'): string {
   if (!text) return '';
-  return `<span class="mb-2.5 inline-flex items-center rounded-full px-2 py-0.5 font-mono text-[0.68rem] font-medium tracking-[0.08em] uppercase ${tones[tone]}">${text}</span>`;
+  return `<span class="mb-1.5 inline-flex items-center rounded-full px-2 py-0.5 font-mono text-[0.62rem] font-medium tracking-[0.08em] uppercase ${tones[tone]}">${text}</span>`;
 }

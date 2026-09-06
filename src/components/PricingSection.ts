@@ -6,14 +6,14 @@ import { SectionIntro } from './SectionIntro';
 
 export function PricingSection(): string {
   return `
-    <section class="${ui.section} scroll-mt-[116px]" id="pricing">
+    <section class="${ui.section} scroll-mt-24" id="pricing">
       <div class="${ui.container}">
         ${SectionIntro({
           eyebrow: 'Pricing',
           title: 'What you pay',
           description: 'KSh 500 a month to start. Or pay KSh 30,000 once and keep it.',
         })}
-        <div class="grid grid-cols-3 items-stretch gap-6 max-nav:grid-cols-1">
+        <div class="mx-auto grid max-w-4xl grid-cols-3 items-stretch gap-4 max-nav:grid-cols-1">
           ${PRICING.map(PricingCard).join('')}
         </div>
         <div class="mt-11 border-t border-line pt-8">
